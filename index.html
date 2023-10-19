@@ -264,10 +264,11 @@
         <div class="form_wrapper padd">
           <div class="input-element">
             <h3>GET IN TOUCH</h3>
-            <form>
+            <form action="https://formspree.io/f/mdoryqko" method="POST">
               <input
                 class="form__input"
-                id="Name"
+                name="name"
+                id="name"
                 type="text"
                 placeholder=" Full Name..."
                 required
@@ -275,6 +276,9 @@
               />
               <label for="name" class="form__label">Full Name</label>
               <input
+                maxlength="20"
+                minlength="15"
+                name="_replyto"
                 class="form__input"
                 id="email"
                 type="email"
@@ -295,7 +299,7 @@
               <label for="message" class="form__label">Message</label>
 
               <div class="button">
-                <button type="submit" class="btn" id="button">Subscribe</button>
+                <button type="submit" value="Send" class="btn" id="button">Subscribe</button>
               </div>
             </form>
           </div>
@@ -343,10 +347,10 @@
           <div class="footer__2">
             <h4>Useful links</h4>
             <ul>
-              <li><a href="/https://www.finepackghana.com/">finepackgh.com</a></li>
-              <li><a href="#">deemandofitnessandphysio</a></li>
-              <li><a href="#">deemandohotels.com</a></li>
-              <li><a href="#">blowplastic.com</a></li>
+              <li><a target="_blank" href="/https://www.finepackghana.com/">Finepack Indutrial Limited</a></li>
+              <li><a target="_blank" href="/https://www.deemandofintnessandphysio.com">Deemando Fitness And Physio</a></li>
+              <li><a target="_blank" href="/https://www.deemandoplasticrecycling">Deemando Plastic Recycle</a></li>
+              <li><a target="_blank" href="/https://www.deemandohotels">Deemando Guess House and Hotels</a></li>
             </ul>
           </div>
           <div class="footer__3">
