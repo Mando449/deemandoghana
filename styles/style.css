@@ -316,18 +316,18 @@ footer ul li a:hover{
   padding: 1.5rem 2rem;
   background-color: var(--text-color);
   border: none;
-  border-bottom: 0.3 solid transparent;
+  border-bottom: 0.3rem solid transparent;
   width: 90%;
   display: block;
   transition: all .3s;
 }
 .form__input:focus{
   outline: none;
-  box-shadow: 0 2rem 2ewm 0 var(--shadow);
-  border-bottom: 0.3 solid var(--color-primary);
+  box-shadow: 0 2rem 2rem 0 var(--shadow);
+  border-bottom: 0.3rem solid var(--color-primary);
 }
 .form__input:focus:invalid{
-  border-bottom: 0.3 solid var(--color-light);
+  border-bottom: 0.3rem solid var(--color-light);
 }
 .form__input::-webkit-input-placeholder{
   color: var(--color-bg);
