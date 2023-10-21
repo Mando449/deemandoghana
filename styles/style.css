@@ -57,7 +57,7 @@ h2 {
 h3 {
   font-size: 2rem;
 }
-p {
+p,blockquote {
   font-size: 1.5rem;
 }
 ul {
@@ -168,14 +168,21 @@ input {
 
 /*************************************************** ABOUT SECTION START**********************************************
 ***************************************************  ABOUT SECTION START*********************************************/
-.about {
-  margin-top: 10rem;
+.about__header{
+  text-align: center;
+  margin-bottom: 2rem;
 }
-.about-text h2 {
+.about__text{
+  bac
+}
+.about__text h2 {
   margin-bottom: 3rem;
   position: relative;
 }
-.about-text h2::before {
+.about__text blockquote{
+  margin-bottom: 2rem;
+}
+.about__text h2::before {
   content: "";
   width: 4rem;
   height: 0.4rem;
@@ -183,7 +190,7 @@ input {
   background: var(--color-primary);
   bottom: 0;
 }
-.about-text h2::after {
+.about__text h2::after {
   content: "";
   width: 3rem;
   height: 0.4rem;
@@ -192,33 +199,7 @@ input {
   bottom: -0.6rem;
   left: 0;
 }
-.about-text p {
-  margin-bottom: 2rem;
-}
-.about-text h3 {
-  margin-bottom: 2rem;
-  position: relative;
-}
-.about-text h3::before {
-  content: "";
-  width: 4rem;
-  height: 0.4rem;
-  position: absolute;
-  background: var(--color-primary);
-  bottom: 0;
-}
-.about-text h3::after {
-  content: "";
-  width: 3rem;
-  height: 0.4rem;
-  position: absolute;
-  background: var(--color-primary);
-  bottom: -0.6rem;
-  left: 0;
-}
-.mission p{
-  margin-bottom: 10rem;
-}
+
 /*************************************************** ABOUT SECTION END**********************************************
 ***************************************************  ABOUT SECTION END*********************************************/
 
