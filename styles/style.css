@@ -7,6 +7,7 @@
   --body-color: hsl(1, 0%, 97%);
   --shadow: hsl(0, 0%, 15%);
 
+  --color-white: #fff;
   --color-dark: #363949;
   --color-light: rgba(132, 139, 200, 0.18);
 
@@ -64,6 +65,7 @@ ul {
   list-style: none;
 }
 a {
+  color: var(--color-white);
   text-decoration: none;
   font-size: 1.6rem;
 }
@@ -96,7 +98,6 @@ input {
   border: 1px solid transparent;
   font-weight: 400;
   background: var(--color-primary);
-  color: var(--color-white);
   border-radius: 1rem;
 }
 .btn:hover {
@@ -340,7 +341,7 @@ address{
 
 /*************************************************** MEDIA QURIES**********************************************
 ***************************************************  MEDIA QURIES*********************************************/
-@media screen and (max-width: 1144px) {
+@media screen and (max-width: 114rem) {
   html{
     font-size: 51.5%;
   }
@@ -375,6 +376,9 @@ address{
   }
 }
 @media screen and (max-width: 768px) {
+  html{
+    font-size: 49.5%;
+  }
   .container {
     width: var(--container-width-sm);
   }
@@ -387,7 +391,7 @@ address{
   .showcase-text p {
     max-width: 100%;
   }
-  .sidebar {
+  /*.sidebar {
     display: block;
   }
   .bars {
@@ -400,7 +404,7 @@ address{
   }
   .menu{
     height: 5rem;
-  }
+  } 
   .menu ul {
     flex-direction: column;
     top: 12%;
@@ -413,7 +417,7 @@ address{
   }
   .menu ul a {
     color: white;
-  }
+  } */
   .footer__container{
     padding: 0 2rem;
   }
