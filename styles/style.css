@@ -436,7 +436,9 @@ address{
   .footer__container{
     grid-template-columns: repeat(2, 1fr);
   }
-  
+  .about__text blockquote, p{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
