@@ -65,7 +65,6 @@ ul {
   list-style: none;
 }
 a {
-  color: var(--color-white);
   text-decoration: none;
   font-size: 1.6rem;
 }
@@ -97,6 +96,7 @@ input {
   padding: .8rem 3rem;
   border: 1px solid transparent;
   font-weight: 400;
+  color: var(--color-white);
   background: var(--color-primary);
   border-radius: 1rem;
 }
@@ -180,6 +180,9 @@ input {
 }
 .about__text blockquote{
   margin-bottom: 2rem;
+}
+.about__text blockquote span{
+  font-weight: bold;
 }
 .about__text h2::before {
   content: "";
@@ -303,7 +306,7 @@ footer ul li a:hover{
 }
 .form__input:focus{
   outline: none;
-  box-shadow: 0 2rem 2rem 0 var(--shadow);
+  box-shadow: 0 .2rem .1rem 0 var(--shadow);
   border-bottom: 0.3rem solid var(--color-primary);
 }
 .form__input:focus:invalid{
@@ -348,9 +351,9 @@ address{
   .container {
     width: var(--container-width-md);
   }
-  .about {
+  /*.about {
     height: max-content;
-  }
+  } */
   .showcase {
     height: max-content;
   }
