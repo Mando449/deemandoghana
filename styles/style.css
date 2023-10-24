@@ -299,7 +299,7 @@ footer ul li a:hover{
   border-bottom: 0.3rem solid transparent;
   width: 90%;
   display: block;
-  transition: all .3s;
+  transition: var(--transition);
 }
 .form__input:focus{
   outline: none;
@@ -322,7 +322,7 @@ footer ul li a:hover{
   margin-left: 2rem;
   margin-top: .7rem;
   display: block;
-  transition: all .3s;
+  transition: var(--transition);
 }
 
 form .button{
