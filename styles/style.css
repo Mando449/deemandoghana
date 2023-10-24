@@ -400,7 +400,7 @@ address{
   .showcase-text p {
     max-width: 100%;
   }
-  /*.sidebar {
+  .sidebar {
     display: block;
   }
   .bars {
@@ -426,7 +426,7 @@ address{
   }
   .menu ul a {
     color: white;
-  } */
+  } 
   .footer__container{
     padding: 0 2rem;
   }
