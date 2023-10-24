@@ -348,9 +348,9 @@ address{
   .container {
     width: var(--container-width-md);
   }
-  /*.about {
+  .about {
     height: max-content;
-  } */
+  }
   .showcase {
     height: max-content;
   }
@@ -371,8 +371,8 @@ address{
   .input-element h3{
     text-align: center;
   }
-  .contact h3{
-    text-align: center;
+  .contact address {
+    align-items: center;
   }
 }
 @media screen and (max-width: 768px) {
