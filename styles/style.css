@@ -138,12 +138,16 @@ input {
 
 /*************************************************** SHOWCASE SECTION START**********************************************
 ***************************************************  SHOWCASE SECTION START*********************************************/
-.showcase-text h1,
-.showcase-text h2,
-.showcase-text a {
+.showcase{
+  height: 80vh;
+  text-align: center;
+}
+.showcase-text * >:not(:last-child) {
   margin-bottom: .8rem;
 }
-
+.showcase-text p{
+  width: inherit;
+}
 .showcase-text a{
   margin-top: 1.2rem;
 }
@@ -164,9 +168,15 @@ input {
 
 /*************************************************** ABOUT SECTION START**********************************************
 ***************************************************  ABOUT SECTION START*********************************************/
-.about__header{
+.about__header h1,
+.about__text h2{
   text-align: center;
-  margin-bottom: 2rem;
+}
+.about__text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .about__text h2 {
   margin-bottom: 3rem;
@@ -351,17 +361,15 @@ address{
     height: max-content;
   }
   .showcase {
-    height: max-content;
+    height: min-content;
   }
   .product-items{
     grid-template-columns: repeat(4, 1fr);
   }
-  .form_wrapper{
-    flex-direction: column;
-  }
-  .form__input{
-    width: 100%;
-  }
+ 
+}
+
+@media only screen and (max-width: 820px) {
   form .button{
     margin-top: 0;
     margin-bottom: 2rem;
@@ -370,11 +378,10 @@ address{
   .input-element h3{
     text-align: center;
   }
-  .contact address {
-    align-items: center;
-  }
+  
 }
-@media screen and (max-width: 768px) {
+
+@media only screen and (max-width: 768px) {
   html{
     font-size: 49.5%;
   }
@@ -384,12 +391,7 @@ address{
   .about {
     margin-top: 0;
   }
-  .showcase {
-    margin-top: 1rem;
-  }
-  .showcase-text p {
-    max-width: 100%;
-  }
+  
   .sidebar {
     display: block;
   }
@@ -423,15 +425,20 @@ address{
   .product-items{
     grid-template-columns: repeat(3, 1fr);
   }
-  .footer__container{
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
   .about__text blockquote, p{
     width: 100%;
   }
+  .form_wrapper{
+    flex-direction: column;
+  }
+  .form__input{
+    width: 100%;
+  }
+ 
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .product-items{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -441,8 +448,69 @@ address{
   address{
     grid-template-columns: 1fr;
   }
+  .about{
+    margin-top: -6rem;
+  }
+  .about__header h1,
+  .about__text h2{
+    text-align: left;
+  }
+  .about__text{
+    display: block;
+  }
+  .about__text blockquote, p{
+    width: 100%;
+  }
+  .contact h3{
+    text-align: center;
+  }
+  .contact address {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
+@media only screen and (max-width: 540px) {
+  .footer__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact h3{
+    text-align: center;
+  }
+  .contact address {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .showcase{
+    margin-top: -6rem;
+  }
+  .showcase-text p {
+    margin: 2rem 0;
+  }
+  .contact address {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .about{
+    width: 100%;
+  }
+  .contact address {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__container{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
 /*************************************************** MEDIA QUARIES **********************************************
 ***************************************************  MEDIA QUARIES *********************************************/
 
